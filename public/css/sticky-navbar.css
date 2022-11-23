@@ -1,0 +1,125 @@
+.sticky-navbar{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    padding: 15px 0px;
+    z-index: 50;
+    background-color: var(--dark);
+    margin-top: -150px;
+    transition: .5s;
+}
+.sticky-navbar a img{
+    width: 50px;
+}
+.sticky-navbar a{
+    color: white;
+    text-decoration: none;
+}
+.sticky-navbar ul{
+    display: flex;
+}
+.sticky-navbar ul li{
+    list-style: none;
+    margin: 0px 20px;
+}
+.sticky-navbar ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-block: 2px;
+    position: relative;
+    padding-bottom: 7px;
+}
+.sticky-navbar ul li a:hover{
+    color: white;
+}
+.sticky-navbar ul li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    left: 0%;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .4s ease;
+    text-align: center;
+}
+.sticky-navbar ul li a.active::after,
+.sticky-navbar ul li a:hover::after{
+    transform: scaleX(1);
+}
+.nav-hide{
+    transform: translateY(-100px);
+}
+
+@media (max-width: 830px) {
+    .sticky-navbar ul{
+        display: none;
+    }
+}
+
+/* ===== CSS FOR NAVBAR MENU (max-width: 830px) ===== */
+.offcanvas{
+    transition: all .3s ease;
+}
+.offcanvas-header{
+    background-color: var(--dark);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.offcanvas-header #offcanvasTopLabel{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.btn-close{
+    color: white;
+    background-color: white;
+}
+.offcanvas-body{
+    color: white;
+}
+.offcanvas ul li{
+    list-style: none;
+    margin: 25px 0px;
+    margin-left: -20px;
+}
+.offcanvas ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-block: 2px;
+    position: relative;
+    margin-bottom: 7px;
+}
+.offcanvas ul li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    left: 0%;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .4s ease;
+    text-align: center;
+}
+.offcanvas ul li a.ofactive::after,
+.offcanvas ul li a:hover::after{
+    transform: scale(1);
+}
+

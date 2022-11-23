@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENA</title>
+    <!-- ===== FONT GOOGLE ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- ===== BOOTSTAP ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- ===== AOS ANIMATE SCROLL ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ===== ICON ===== -->
+    <link rel="icon" href="assets/image/PENA.png">
+    <!-- ===== MY CSS ===== -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/sticky-navbar.css">
+    <link rel="stylesheet" href="css/mini-navbar.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/member.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- ===== LOADING START ===== -->
+    <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+    </div>
+    <!-- ===== LOADING END ===== -->
+
+    <!-- ===== COVER START ===== -->
+    <div class="cover" id="home">
+        <nav>
+            <a class="penaku" href="#home"><img src="assets/image/PENA.png" alt=""><span>PENAKU</span></a>
+            <i class="fa-solid fa-bars text-white font-25 nav-icon" onclick="showMiniNavbar()"></i>
+            <ul>
+                <li><a class="active" href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#event">event</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <img src="assets/image/cover.webp" class="cover-1">
+            <img src="assets/image/cover-2.webp" class="cover-2">
+            <div class="filter-shadow"></div>
+        </div>
+
+        <div class="text-cover" id="coverSubTitle">
+            <span>
+                programing, engineering, & networking adhi guna
+            </span>
+            <h1 id="coverHeadTitle">PENA</h1>
+        </div>
+        <a href="join.html">
+            <button class="btn-cover">Join Us</button>
+        </a>
+    </div>
+    <!-- ===== COVER END ===== -->
+
+
+    <!-- ===== STICKY NAVBAR START ===== -->
+    <div class="sticky-navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a class="penaku" href="#home"><img src="assets/image/PENA.png" alt=""><span>PENAKU</span></a>
+                <i class="fa-solid fa-bars text-white font-25 nav-icon" onclick="showMiniNavbar()"></i>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#event">event</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ===== STICKY NAVBAR END ===== -->
+
+
+    <!-- ===== MINI NAVBAR START ===== -->
+    <div class="shadow-mini-navbar">
+        <div class="mini-navbar">
+            <div>
+                <ul>
+                    <li><a href="#home" onclick="hideMiniNavbar()">home</a></li>
+                    <li><a href="#about" onclick="hideMiniNavbar()">about</a></li>
+                    <li><a href="#event" onclick="hideMiniNavbar()">event</a></li>
+                    <li><a href="#contact" onclick="hideMiniNavbar()">contact</a></li>
+                    <li><i class="fa-solid fa-xmark text-white font-30 mt-5 pointer" onclick="hideMiniNavbar()"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ===== MINI NAVBAR END ===== -->
+
+
+    <div class="content">
+        <div class="content-area">
+            <!-- ===== ABOUT START ===== -->
+            <section id="about" class="container gap-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="pt-5 mt-5 mb-5 pb-3 obj-1"></div>
+                <div class="about-group">
+                    <div class="w-50-100">
+                        <img src="assets/element/programming.svg" alt="">
+                    </div>
+                    <div class="w-50-100">
+                        <h1 class="fw-700">About PENA</h1>
+                        <p class="about-pena-desc">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, odio quibusdam. Ipsam dicta vel culpa! Officia delectus soluta saepe perferendis rerum molestias adipisci dicta exercitationem, iusto repellat provident excepturi! Dignissimos distinctio quaerat est, accusamus totam maxime reiciendis? Beatae modi adipisci impedit quae officia aperiam hic atque dignissimos id obcaecati. Consectetur?
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <br> <br> <br>
+            <!-- <div class="about-bottom"></div> -->
+            <!-- ===== ABOUT END ===== -->
+
+
+            <div class="pena">
+                <div class="container pena-group">
+                    <div class="card my-card pena-card">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-code font-40"></i>
+                            <br> <br>
+                            <h3>Programming</h3>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti est, facilis illo voluptas similique ducimus alias placeat aliquid esse iste repellat provident suscipit quas maxime id, dicta hic autem.
+                        </div>
+                    </div>
+    
+                    <div class="card my-card pena-card">
+                        <div class="card-body text-center">
+                            <i class="fa-sharp fa-solid fa-gear font-40"></i>
+                            <br> <br>
+                            <h3>Engineering</h3>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti est, facilis illo voluptas similique ducimus alias placeat aliquid esse iste repellat provident suscipit quas maxime id, dicta hic autem.
+                        </div>
+                    </div>
+    
+                    <div class="card my-card pena-card">
+                        <div class="card-body text-center">
+                            <i class="fa-solid fa-wifi font-40"></i>
+                            <br> <br>
+                            <h3>Networking</h3>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti est, facilis illo voluptas similique ducimus alias placeat aliquid esse iste repellat provident suscipit quas maxime id, dicta hic autem.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== EVENT START ===== -->
+            <section class="join text-center" id="event">
+                <div class="my-shadow d-flex align-items-center justify-content-center">
+                    <div class="text-white">
+                        <h3 class="font-60 fw-700 join-head" data-aos="fade-up" data-aos-duration="1000">Join With Us</h3>
+                        <p class="font-25 fw-500 join-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                            Are you ready to be generation 9 in PENA?
+                        </p>
+                        <a href="join.html">
+                            <button class="button btn-blue" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">I'am Ready</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- ===== EVENT END ===== -->
+
+
+            <!-- ===== MEMBER START ===== -->
+            <div class="member">
+                <div class="container text-center pt-5 pb-4">
+                    <h2>Organization Core People</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, ullam!</p>
+                </div>
+                <div class="member-group container">
+                    <div class="card-member" id="member1" onmouseover="member1over()" style="background: url(assets/image/people-1.webp);">
+                        <div class="text-member" id="textMember1">
+                            <h4>Full Name</h4>
+                            <p>Title here</p>
+                        </div>
+                    </div>
+                    <div class="card-member member-active" id="member2" onmouseover="member2over()" style="background: url(assets/image/people-2.webp);">
+                        <div class="text-member" id="textMember2">
+                            <h4>Full Name</h4>
+                            <p>Title here</p>
+                        </div>
+                    </div>
+                    <div class="card-member" id="member3" onmouseover="member3over()" style="background: url(assets/image/people-3.webp);">
+                        <div class="text-member" id="textMember3">
+                            <h4>Full Name</h4>
+                            <p>Title here</p>
+                        </div>
+                    </div>
+                    <div id="member4" onmouseover="member4over()" style="background: url(assets/image/people-4.webp);" class="card-member">
+                        <div class="text-member" id="textMember4">
+                            <h4>Full Name</h4>
+                            <p>Title here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ===== MEMBER END ===== -->
+
+
+            <!-- ===== VISI MISI START ===== -->
+            <div class="visi">
+                <div class="about-group container">
+                    <div class="w-50-100">
+                        <h1 class="fw-700">Visi</h1>
+                        <p class="about-pena-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure vitae rem, sit nesciunt quibusdam quo laboriosam libero soluta reiciendis esse!
+                        </p>
+                        <h1 class="fw-700 mt-3">Misi</h1>
+                        <p class="about-pena-desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure vitae rem, sit nesciunt quibusdam quo laboriosam libero soluta reiciendis esse!
+                        </p>
+                    </div>
+                    <div class="w-50-100 goals">
+                        <img src="assets/element/goals.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- ===== VISI MISI END ===== -->
+
+
+            <!-- ===== FOOTER START ===== -->
+            <footer>
+                <section id="contact" class="container">
+                    <div class="footer-group">
+                        <div class="w-100">
+                            <div class="footer-logo-name">
+                                <div class="logo">
+                                    <img src="assets/image/PENA.png" alt="">
+                                </div>
+                                <h3 class="mt-2">PENA</h3>
+                            </div>
+                            <div class="font-14 footer-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptas earum maiores impedit id optio repellat tenetur laudantium quaerat accusantium.
+                            </div>
+                        </div>
+                        <div class="w-100 d-flex justify-content-center">
+                            <div>
+                                <span class="fw-bold letter-1">Social Media</span>
+                                <div class="sosmed fw-light font-25 mt-2">
+                                    <span>
+                                        <a href="https://facebook.com">
+                                            <i class="fa-brands fa-square-facebook"></i>
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="https://instagram.com">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </span>
+                                    <span>
+                                        <a href="https://youtube.com">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </span>
+                                    <span style="margin-right: 0px;">
+                                        <a href="https://tiktok.com">
+                                            <i class="fa-brands fa-tiktok"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                                <br>
+                                <span class="fw-bold letter-1">Contact</span>
+                                <div class="fw-light sosmed contact">
+                                    <span>
+                                        <a href="">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                            <span class="klik-me">Click Me!</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 footer-nav">
+                            <div>
+                                <span class="fw-bold letter-1">Navigation</span>
+                                <div class="fw-light d-flex flex-column mt-2">
+                                    <span><a href="#home">Home</a></span>
+                                    <span><a href="#about">About</a></span>
+                                    <span><a href="#event">Event</a></span>
+                                    <span><a href="#contact">Contact</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
+            <!-- ===== FOOTER END ===== -->
+
+            
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    <!-- ===== AOS ANIMATE SCROLL ===== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- ===== SWIPPER ===== -->
+    <script src="assets/swipper/js/swiper-bundle.min.js"></script>
+    <script src="assets/swipper/js/script.js"></script>
+    <!-- ===== BOOTSTRAP ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

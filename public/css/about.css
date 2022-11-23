@@ -1,0 +1,106 @@
+.about-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.about-group section{
+    width: 50%;
+}
+.about-group img{
+    width: 70%;
+}
+.about-pena-desc{
+    font-size: 20px;
+}
+
+#about{
+    padding-bottom: 80px;
+}
+.w-50-100{
+    width: 50%;
+}
+.about-bottom{
+    width: 100%;
+    background-color: var(--light-blue);
+    height: 100px;
+    clip-path: polygon(100% 70%, 100% 100%, 0 100%);
+}
+
+@media (max-width: 992px) {
+    .about-pena-desc{
+        font-size: 16px;
+    }
+}
+@media (max-width: 785px) {
+    .about-group{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+    .about-group img{
+        margin-bottom: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-group h1{
+        text-align: center;
+    }
+    .about-pena-desc{
+        font-size: 16px;
+        text-align: justify;
+    }
+    
+    .obj-1{
+        display: none;
+    }
+    #about{
+        padding-bottom: 0px;
+    }
+    .w-50-100{
+        width: 100%;
+    }
+
+    /* visi misi */
+    .goals{
+        display: none;
+    }
+    .visi h1, .visi p{
+        text-align: center;
+    }
+}
+
+/* PENA */
+.pena{
+    width: 100%;
+    /* background-color: var(--light-blue); */
+    background-color: #79553f;
+    padding: 200px 0px;
+}
+.pena-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+}
+.pena-card{
+    width: 120%;
+}
+@media (max-width: 1000px) {
+    .pena{
+        padding: 80px 0px;
+    }
+    .pena p{
+        text-align: justify;
+    }
+    .pena-group{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .pena-card{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+

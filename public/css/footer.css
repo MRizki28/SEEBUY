@@ -1,0 +1,81 @@
+footer{
+    background-color: var(--dark);
+    padding: 50px 0px;
+}
+footer *{
+    color: white;
+    text-decoration: none;
+}
+footer *:hover{
+    color: white;
+}
+.logo img{
+    width: 40px;
+}
+.footer-logo-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.footer-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+}
+.sosmed{
+    display: flex;
+    flex-direction: row;
+}
+.sosmed span{
+    margin-right: 10px;
+}
+.klik-me{
+    text-decoration: underline;
+}
+.footer-nav{
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 1100px) {
+    .footer-group{
+        gap: 100px;
+    }
+}
+@media (max-width: 770px) {
+    .footer-group{
+        flex-direction: column;
+        gap: 0px;
+        justify-content: center;
+    }
+    .footer-text{
+        width: 280px;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+    .footer-group .w-100{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .sosmed{
+        justify-content: center;
+    }
+    .footer-logo-name{
+        justify-content: center;
+        gap: 0px;
+    }
+    .logo{
+        margin-right: 5px;
+    }
+    .footer-nav{
+        justify-content: center;
+    }
+    .contact{
+        padding-left: 20px;
+    }
+}
+
+
