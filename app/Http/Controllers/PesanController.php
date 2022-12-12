@@ -41,7 +41,7 @@ class PesanController extends Controller
                 'nama_pemesan' => 'required',
                 'jumlah_pesanan' => 'required',
                 'nohp' => 'required|numeric',
-                'alamat' => 'required',
+                'detail' => '',
                 'kode_pesanan' => '',
                 'total_harga' => '$menu->harga*$request->jumlah_pesanan'
             ],
@@ -63,7 +63,7 @@ class PesanController extends Controller
         $data->nama_pemesan = $request->input('nama_pemesan');
         $data->jumlah_pesanan = $request->input('jumlah_pesanan');
         $data->nohp = $request->input('nohp');
-        $data->alamat = $request->input('alamat');
+        $data->detail = $request->input('detail');
         $data->kode_pesanan = mt_rand(100, 999);
         $data->total_harga = $menu->harga * $request->jumlah_pesanan;
         $data->update();

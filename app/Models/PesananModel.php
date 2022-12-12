@@ -11,7 +11,7 @@ class PesananModel extends Model
 
     protected $table = 'pesanan';
     protected $filleble = [
-        'id', 'menu_id', 'nama_pemesan', 'jumlah_pesanan', 'nohp', 'alamat', 'kode_pesanan', 'total_harga', 'created_at', 'updated_at'
+        'id', 'menu_id', 'nama_pemesan', 'jumlah_pesanan', 'nohp', 'detail', 'kode_pesanan', 'total_harga', 'created_at', 'updated_at'
     ];
 
 

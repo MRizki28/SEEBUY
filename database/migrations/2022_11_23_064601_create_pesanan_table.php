@@ -19,7 +19,7 @@ class CreatePesananTable extends Migration
             $table->string('nama_pemesan');
             $table->integer('jumlah_pesanan');
             $table->string('nohp');
-            $table->string('alamat');
+            $table->string('detail')->nullable();
             $table->string('kode_pesanan');
             $table->string('total_harga');
             $table->timestamps();

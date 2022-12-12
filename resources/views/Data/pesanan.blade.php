@@ -15,7 +15,7 @@
                             <th>Nama Pemesan</th>
                             <th>Jumlah</th>
                             <th>No Hp</th>
-                            <th>Alamat</th>
+                            <th>Detail</th>
                             <th>Kode</th>
                             <th>Total Harga </th>
                             <th style="width:200px ;">Aksi</th>
@@ -29,11 +29,11 @@
                     @foreach ($data as $d)
                         <tr>
                             <td>{{ $no++ }}</td>
-                            <td>{{ $d->menu_id }}</td>
+                            <td>{{ $d->bazar->nama_menu }}</td>
                             <td>{{ $d->nama_pemesan }}</td>
                             <td>{{ $d->jumlah_pesanan }}</td>
                             <td>{{ $d->nohp }}</td>
-                            <td>{{ $d->alamat }}</td>
+                            <td>{{ $d->detail }}</td>
                             <td>{{ $d->kode_pesanan }}</td>
                             <td>Rp. {{ number_format($d->total_harga) }}</td>
                             <td>

@@ -80,9 +80,9 @@
                             <input type="file" class="form-control" name="gambar" required>
                         </div>
                         <div class="form-group">
-                            <label for="descriptiom">Description</label>
-                            <input type="text" class="form-control" name="description" placeholder="Input Here">
-                        </div>
+                            <label for="description">Deskripsi</label>
+                            <textarea class="form-control" name="description"  placeholder="Input Here"></textarea>
+                          </div>
 
                 </div>
                 <div class="modal-footer">

@@ -58,11 +58,10 @@
                                             <tr>
 
                                                 @csrf
-                                                <td>Alamat</td>
+                                                <td>Detail (contoh :rasa balado) , tidak wajib di isi</td>
                                                 <td>:</td>
                                                 <td>
-                                                    <input type="text" name="alamat" id="alamat"
-                                                        class="form-control">
+                                                    <textarea class="form-control" type="text" name = 'detail' id="detail"  rows="3"></textarea>
                                                     <button type="submit" class="btn btn-primary mt-2"><i
                                                             class="fa fa-shopping-cart"></i>Pesan</button>
                                                 </td>

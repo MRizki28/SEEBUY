@@ -152,13 +152,13 @@
                 <div class="container pena-group" id="menu">
                     <div class="row justify-content-center">
                         @foreach ($menu as $menus)
-                            <div class="card m-3" style="width: 18rem;">
+                            <div class="card" style="width: 18rem;">
                                 <img src="{{ asset('uploads\menu') }}/{{ $menus->gambar }}" class="card-img-top size" 
                                     alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $menus->nama_menu }}</h5>
                                     <p class="card-text">
-                                        <strong>Harga :</strong> Rp.{{ $menus->harga }} <br>
+                                        <strong>Harga :</strong> Rp.{{ number_format($menus->harga) }} <br>
                                         <strong>Deskripsi</strong> <br>
                                         {{ $menus->description }}
                                     </p>

@@ -30,7 +30,7 @@ class detailController extends Controller
                 'nama_pemesan' => 'required',
                 'jumlah_pesanan' => 'required',
                 'nohp' => 'required|numeric',
-                'alamat' => 'required',
+                'detail' => '',
                 'kode_pesanan' => '',
                 'total_harga' => '$menu->harga*$request->jumlah_pesanan',
             ],
@@ -52,7 +52,7 @@ class detailController extends Controller
         $pesanan->nama_pemesan = $request->nama_pemesan;
         $pesanan->jumlah_pesanan = $request->jumlah_pesanan;
         $pesanan->nohp = $request->nohp;
-        $pesanan->alamat = $request->alamat;
+        $pesanan->detail = $request->detail;
         $pesanan->kode_pesanan = mt_rand(100, 999);
         $pesanan->total_harga = $menu->harga * $request->jumlah_pesanan;
         $pesanan->save();

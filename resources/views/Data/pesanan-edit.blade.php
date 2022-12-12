@@ -36,9 +36,8 @@
         </div>
 
         <div class="form-group">
-            <label for="alamat">alamat</label>
-            <input value="{{ $data->alamat }}" id="alamat" name="alamat" type="text" class="form-control"
-                placeholder="Alamat">
+            <label for="detail">Request (Contoh: Rasa Balado )</label>
+            <textarea class="form-control" type="text" name = 'detail'  rows="3"> {{ old('detail', $data->detail) }}</textarea>
         </div>
 
         <div class="modal-footer">

@@ -16,7 +16,7 @@
         <div class="form-group">
             <label for="nim">Harga</label>
             <input value="{{ $data->harga }}" id="harga" type="text" class="form-control" name="harga"
-                placeholder="Masukan NIM" required>
+                placeholder="Harga" required>
         </div>
         @if ($data)
             <div class="form-group">
@@ -25,13 +25,10 @@
                     placeholder="Upload file" required>
             </div>
         @endif
-
         <div class="form-group">
-            <label for="description">description</label>
-            <input value="{{ $data->description }}" id="description" name="description" type="text" class="form-control"
-                placeholder="Masukan Alamat" required>
-
-        </div>
+            <label for="description">Deskripsi</label>
+            <textarea class="form-control" type="text" name = 'description'  rows="3"> {{ old('description', $data->description) }}</textarea>
+          </div>
         </div>
 
         <div class="modal-footer">
