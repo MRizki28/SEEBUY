@@ -152,7 +152,7 @@
                 <div class="container pena-group" id="menu">
                     <div class="row justify-content-center">
                         @foreach ($menu as $menus)
-                            <div class="card" style="width: 18rem;">
+                            <div class="card m-3" style="width: 18rem;">
                                 <img src="{{ asset('uploads\menu') }}/{{ $menus->gambar }}" class="card-img-top size" 
                                     alt="...">
                                 <div class="card-body">
