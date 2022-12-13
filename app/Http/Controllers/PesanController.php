@@ -20,6 +20,13 @@ class PesanController extends Controller
         return view('Data.pesanan')->with('data', $data);
     }
 
+    public function cetakPesanan()
+    {
+        $dataCetak = PesananModel::with('Bazar')->get();
+
+        return view('Data.cetak-pesanan')->with('dataCetak', $dataCetak);
+    }
+
     public function edit($id)
     {
         $data = PesananModel::find($id);
