@@ -76,11 +76,13 @@ Route::group(['middleware' => ['auth','adminlevel:Super Admin']], function (){
 Route::group(['middleware' => ['auth','adminlevel:Super Admin,Admin']], function (){
     Route::get('dashboard', [DashboardController::class ,'index']);
 
+    Route::get('/cetak-pesanan',[PesanController::class , 'cetakPesanan'])->name('cetak-pesanan');
     //data pesanan
         Route::get('/pesanan',[PesanController::class , 'readDataa'])->name('dataPesanan');
         Route::get('/pesanan-edit/{id}', [PesanController::class , 'edit'])->name('pesan.edit');
         Route::prefix('pesanan/')->group(function(){
             Route::get('/pesanan',[PesanController::class , 'readDataa'])->name('dataPesanan');
+
             Route::post('/update/{id}', [PesanController::class, 'update'])->name('pesan.update');
             Route::get('delete/{id}', [PesanController::class, 'deleteDataa'])->name('deleteData.pesanan');
     });
