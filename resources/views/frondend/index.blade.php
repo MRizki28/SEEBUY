@@ -148,31 +148,33 @@
             <!-- ===== MENU ===== -->
 
             <div class="member">
-            <main class="py-4">
-                <div class="container pena-group" id="menu">
-                    <div class="row justify-content-center">
-                        @foreach ($menu as $menus)
-                            <div class="card m-3" style="width: 18rem;">
-                                <img src="{{ asset('uploads\menu') }}/{{ $menus->gambar }}" class="card-img-top size" 
-                                    alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ $menus->nama_menu }}</h5>
-                                    <p class="card-text">
-                                        <strong>Harga :</strong> Rp.{{ number_format($menus->harga) }} <br>
-                                        <strong>Deskripsi</strong> <br>
-                                        {{ $menus->description }}
-                                    </p>
-                                    <a href="{{ url('pesan') }}/{{ $menus->id }}" class="btn btn-primary"><i
+                <main class="menu">
+                    <div class="container pena-group" id="menu">
+                        <div class="row justify-content-center">
+                            @foreach ($menu as $menus)
+                                <div class="card m-3" style="width: 18rem;">
+                                    <div class="card-body text-justify">
+                                        <img src="{{ asset('uploads\menu') }}/{{ $menus->gambar }}" class="img-fluid">
+                                        <h5 class="card-title mt-3"><strong>Menu:</strong> {{ $menus->nama_menu }}</h5>
+                                        <p class="card-text">
+                                        <div class="row mt-2">
+                                            <div class="col-md-12">
+                                                <h5><strong>Harga:</strong> Rp.{{ number_format($menus->harga) }}</h5>
+                                                <h5><strong>Deskripsi :</strong></h5>
+                                                <p>{{ $menus->description }}</p>
+                                            </div>
+                                        </div>
+                                        </p>
+
+                                    </div>
+                                    <a href="{{ url('pesan') }}/{{ $menus->id }}" class="btn btn-primary mb-4"><i
                                             class="fa fa-shopping-cart"></i> Pesan</a>
-
                                 </div>
-                            </div>
-                        @endforeach
-
+                            @endforeach
+                        </div>
                     </div>
-                </div>
-            </main>
-        </div>
+                </main>
+            </div>
 
             <!-- ===== FOOTER START ===== -->
             <footer>
