@@ -20,6 +20,15 @@ img{
     justify-content: center;
     gap: 20px;
 }
+.member .menu h5{
+    font-size: 16px;
+    font-family: poppins;
+}
+.member .menu p{
+    font-size: 14px;
+    font-family: poppins;
+}
+
 .card-member{
     width: 150px;
     height: 450px;
@@ -34,6 +43,13 @@ img{
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+}
+.member img{
+    width: 100%;
+    height: 250px;
+}
+.member a{
+    width: 100%;
 }
 .size{
     max-width: 400px;
