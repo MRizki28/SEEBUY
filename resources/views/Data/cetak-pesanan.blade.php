@@ -49,10 +49,9 @@
                 <td>{{ $cetak->detail }}</td>
                 <td>{{ $cetak->kode_pesanan }}</td>
                 <td>Rp. {{ number_format($cetak->total_harga) }}</td>
-                    
-              
             </tr>
             @endforeach
+          
         </table>
     </div>
 </body>
