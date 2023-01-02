@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
     {{-- @include('sweetalert::alert') --}}
 
 
