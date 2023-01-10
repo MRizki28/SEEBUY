@@ -15,7 +15,7 @@
     <title>Document</title>
 </head>
 
-<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+<body >
     @yield('content')
     @include('sweetalert::alert')
     </form>
