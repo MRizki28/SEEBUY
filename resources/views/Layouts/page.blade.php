@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 
-<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+<body >
 
     @yield('content')
 
