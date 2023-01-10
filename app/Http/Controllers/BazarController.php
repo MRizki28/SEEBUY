@@ -111,6 +111,7 @@ class BazarController extends Controller
         $data = BazarModel::find($request->id);
         $data->nama_menu = $request->input('nama_menu');
         $data->harga = $request->input('harga');
+        
         if ($request->hasfile('gambar')) {
             $destination = 'uploads/menu/' . $data->gambar;
             if (File::exists($destination)) {
