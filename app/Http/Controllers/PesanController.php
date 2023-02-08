@@ -9,6 +9,8 @@ use App\Models\PesananModel;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
+
 
 class PesanController extends Controller
 {
@@ -19,6 +21,8 @@ class PesanController extends Controller
 
         return view('Data.pesanan')->with('data', $data);
     }
+
+
 
     public function cetakPesanan()
     {
@@ -93,5 +97,22 @@ class PesanController extends Controller
         PesananModel::whereId($id)->delete();
         Alert::success('Behasil', 'Data Berhasil Di Hapus');
         return redirect()->back();
+    }
+
+
+    // public function deleteAll()
+    // {
+    //     PesananModel::all()->delete();
+    //     Alert::success('Berhasil', 'Semua data berhasil dihapus');
+    //     return redirect()->back();
+    // }
+
+    public function deleteAll()
+    {
+        DB::table('pesanan')->delete();
+        Alert::success('Berhasil', 'Semua data berhasil dihapus');
+        return redirect()->back();
+
+        return view('Data.pesanan');
     }
 }
