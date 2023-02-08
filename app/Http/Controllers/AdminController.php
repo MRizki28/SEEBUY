@@ -50,7 +50,7 @@ class AdminController extends Controller
             $data->name = $request->name;
             $data->level = $request->level;
             $data->email = $request->email;
-            $data->password = bcrypt($request->password);
+            $data->password = bcrypt($request->password);;
             $data->remember_token = $random;
             $data->save();
         } catch (\Throwable $th) {
@@ -125,4 +125,5 @@ class AdminController extends Controller
         Alert::success('Behasil', 'Data Berhasil Di Hapus');
         return redirect()->back();
     }
+
 }
