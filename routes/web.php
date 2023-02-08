@@ -41,7 +41,7 @@ Route::get('/reset-password', function () {
 Route::get('reset-password/edit',[ResetPasswordController::class, 'index'])->name('reset-password.edit');
     Route::put('reset-password/edit', [ResetPasswordController::class, 'update']);
 
-//login 
+//login
 Route::get('/login', function () {
     return view('Data.login');
 })->name('login');
@@ -51,7 +51,7 @@ Route::get('/logout', [LoginController::class,'logout'])->name('logout');
 
 Route::group(['middleware' => ['auth','adminlevel:Super Admin']], function (){
     Route::get('dashboard', [DashboardController::class ,'index']);
-    
+
     //data bazar
     Route::get('/data-bazar',[BazarController::class , 'index'])->name('dataBazar');
     Route::get('/bazar-edit/{id}', [BazarController::class , 'edit'])->name('bazar.edit');
@@ -70,7 +70,7 @@ Route::group(['middleware' => ['auth','adminlevel:Super Admin']], function (){
         Route::get('delete/{id}', [AdminController::class, 'deleteData'])->name('deleteData.admin');
     });
 
-    
+
 });
 
 Route::group(['middleware' => ['auth','adminlevel:Super Admin,Admin']], function (){
@@ -85,6 +85,7 @@ Route::group(['middleware' => ['auth','adminlevel:Super Admin,Admin']], function
 
             Route::post('/update/{id}', [PesanController::class, 'update'])->name('pesan.update');
             Route::get('delete/{id}', [PesanController::class, 'deleteDataa'])->name('deleteData.pesanan');
+            Route::get('/delete', [PesanController::class, 'deleteAll'])->name('deleteAll.pesanan');
     });
 
     //change password in profil
